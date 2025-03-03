@@ -117,7 +117,7 @@ export type BatchContext<S = Store> = DataHandlerContext<S, Fields>
 export type SelectedBlock = Pick<BlockHeader<Fields>, 'height' | 'timestamp' | 'hash'>
 export type SelectedEvent = Pick<Event, 'name' | 'args'>
 export type SelectedExtrinsic = Pick<Extrinsic, 'signature'>
-export type SelectedCall = Pick<Call, 'name' | 'origin'>
+export type SelectedCall = Pick<Call, 'name' | 'origin' | 'args'>
 
 export type Context<S = Store>  = {
   store: S
